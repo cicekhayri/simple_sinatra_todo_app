@@ -1,0 +1,10 @@
+<% if @note %>
+<p>You really want to delet task</p>
+  <form action="/<%= @note.id %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit">
+  </form>
+<% else %>
+<p>No Tasks found</p>
+<% end %>
+
