@@ -1,0 +1,13 @@
+<section id="add">
+	<form action="/" method="post">
+		<textarea name="content"></textarea>
+		<input type="submit" value="Take Note!">
+	</form>
+</section>
+
+<% @notes.each do |note| %>
+	<p><h2><%= note.content %></h2></p>
+	<p><small><%= note.created_at %></small></p>
+	<p><a href="<%= note.id %>">Edit</a></p>
+<% end %>
+

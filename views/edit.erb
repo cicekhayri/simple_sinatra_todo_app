@@ -1,0 +1,7 @@
+<section id="add">
+	<form action="/<%= @note.id %>" method="post" id="edit">
+		<input type="hidden" name="_method" value="put">
+		<textarea name="content"><%= @note.content %></textarea>
+		<input type="submit" value="Update">
+	</form>
+</section>
